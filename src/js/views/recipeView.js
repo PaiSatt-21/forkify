@@ -1,5 +1,4 @@
 import icons from 'url:../../img/icons.svg';
-// import { Fraction } from 'fractional';
 import View from './view';
 
 class recipeView extends View {
@@ -116,7 +115,6 @@ class recipeView extends View {
     </div>
     `;
   }
-  //ing.quantity ? new Fraction(ing.quantity).toString() : ''
   _generateMarkupIngredient(ing) {
     return `
       <li class="recipe__ingredient">
