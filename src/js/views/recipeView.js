@@ -121,7 +121,9 @@ class recipeView extends View {
         <svg class="recipe__icon">
           <use href="${icons}#icon-check"></use>
         </svg>
-        <div class="recipe__quantity">${ing.quantity.toFixed(1)}</div>
+        <div class="recipe__quantity">${
+          ing.quantity ? ing.quantity.toFixed(1) : ''
+        }</div>
         <div class="recipe__description">
           <span class="recipe__unit">${ing.unit}</span>
           ${ing.description}

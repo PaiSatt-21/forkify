@@ -99,9 +99,9 @@ const controlAddRecipe = async function (newRecipe) {
     window.history.pushState(null, '', `#${model.state.recipe.id}`);
 
     // 7) timeout message
-    // setTimeout(function () {
-    //   addRecipeView._toggleWindow();
-    // }, MODAL_CLOSE_SEC * 1000);
+    setTimeout(function () {
+      addRecipeView._toggleWindow();
+    }, MODAL_CLOSE_SEC * 1000);
   } catch (err) {
     console.error(err);
     addRecipeView.renderError(err.message);
